@@ -80,7 +80,36 @@ Pour résoudre cela, git vous offre une solution : Le cherrypick !
 
 *Chose importante à savoir, si cela vous arrive, vous ne devez surtout pas push le commit sur le remote, si c'est le cas, vous allez devoir force push pour supprimer le commit, ce qui est très déconseillé dans la plupart des cas !*
 
-Pour utiliser le cherrypick : 
+Pour tester le cherrypick : 
 
-* 
+  * Modifier la valeur de retour dans le fichier `ex02/main.c`
+  * Commitez (sans push) votre modification
+  * Changez de branche (`new-name`)
+  * Cherrypick le dernier commit du `main` sur la nouvelle branche
+  * Pushez le commit
 
+Maintenant, il va falloir nettoyer la branche `main` et supprimer le commit en trop, pour commencer revenez sur la branche `main` (local).
+
+Ils existent plusieurs solutions pour supprimer un commit, nous vous laissons essayer de trouvez par vous même, le but est de ne plus avoir le dernier commit du `main`.
+
+
+# 4 - Rebase
+
+Lorsqu'on travaille sur plusieurs branches en même temps, et que nos collaborateurs merge sur le master/main, il peut être nécessaire de récupérer leurs travaux comme des fonctions ou des fichiers spécifiques.
+
+Dans ces cas là, il est déconseillé de récupérer les fichiers à la main car cela peut créer pleins de conflits lors du merge final de la branche.
+
+C'est pour ça, qu'il existe une option qui s'appelle le `rebase`, cette fonctionnalité permet de remettre votre branche tout en haut d'une autre branche.
+
+L'avantage du rebase comparé au merge habituel, c'est qu'au lieu de créer un nouveau commit et d'avoir une branche perpendiculaire en plein milieu de la liste des branches, on modifie directement le commit d'origine de la branche.
+
+Voici une très bonne vidéo qui explique visuellement la différence entre les merges et les commit : https://www.youtube.com/watch?v=xot40u-_1FI
+
+Testons ça maintenant : 
+
+* Revenez sur votre `main` si ce n'est pas déjà fait
+* Créer une fonction dans le fichier `ex02/main.c` (Une fonction vide est suffisante pour cette exercice)
+* Commitez et pushez votre commit
+* Changez de branche (`new-name`)
+
+Maintenant essayer de rebase la branche `new-name` à partir du `main`, un peu de [documentation ici](https://support.gitkraken.com/working-with-repositories/branching-and-merging/) !
