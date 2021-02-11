@@ -5,10 +5,10 @@ Ce workshop a pour but de vous faire comprendre comment fonctionne les issues Gi
 Notamment :
 
 * Fork un repo
-* Paramètrer son GitKraken
+* Paramétrer son GitKraken
 * Résoudre des conflits de branches et de commits
-* Récuperer le commit d'une autre branche
-* Mettre un jour une branche avec le master/main
+* Récupérer le commit d'une autre branche
+* Mettre à jour une branche avec le master/main
 * Gérer vos branches
 * Créer, récupérer, modifier ou supprimer des stashs
 * Rename un commit
@@ -22,13 +22,13 @@ Quelques liens qui pourront vous être utiles :
 * [GitKraken Documentation](https://www.gitkraken.com/downloads/gitkraken-cheat-sheet-v1.6.pdf)
 * [Cherry Pick](https://support.gitkraken.com/working-with-commits/cherrypick/)
 
-Pour ce workshop, vous aurez besoin de `Gitkraken` disponible via le lien au dessus. GitKraken est un logiciel avec une version gratuite et payante, la version payante est disponible gratuitement si vous êtes étudiant (Epitech) à l'aide du Student Pack Github via [ce lien](https://education.github.com/pack).
+Pour ce workshop, vous aurez besoin de `Gitkraken` disponible via le lien si dessus. GitKraken est un logiciel avec une version gratuite et payante, la version payante est disponible gratuitement si vous êtes étudiant (Epitech) à l'aide du Student Pack Github via [ce lien](https://education.github.com/pack).
 
-*N.B: Il est préférable d'avoir la version payante qui est disponible jusqu'à la fin de vos études mais sous vous n'avez pas encore le Student Pack ou si vous ne pouvez pas l'avoir vous pouvez sauter certains exercices, nous ferons l'explication directement sur Discord*
+*N.B: Il est préférable d'avoir la version payante qui est disponible jusqu'à la fin de vos études mais si vous n'avez pas encore le Student Pack ou si vous ne pouvez pas l'avoir vous pouvez sauter certains exercices, nous ferons l'explication directement sur Discord*
 
 # 0 - Init
 
-Pour le première exercice nous vous demandons d'installer GitKraken et de préparer l'environnement.
+Pour le premier exercice nous vous demandons d'installer GitKraken et de préparer l'environnement.
 
 Pour cela :
 
@@ -39,14 +39,15 @@ Pour cela :
 
 Tout devrais être bon maintenant, faites attention à bien cloner votre répertoire et pas celui là, c'est obligatoire pour passer à la suite.
 
-# 1 - Static Analysis and ASM
+# 1 - Créer son kanban
 
-*Challenge Name: translate_me*
+C'est la première étape pour bien mettre en place les objectifs et tâches de chacun lors de la réalisation d'un projet.
 
-Static analysis is the process of studying a program without running it.
-To do so, we can use GDB to interpret the asm code in binary form to plaintext binary.
-Then we read this code and deduce the way the program work.
-So go ahead and open *translate_me* with `gdb ./translate_me` !
-To display the asm instructions of a function, use `pdisas function_name` or `pd function_name`.
-
-The purpose of this challenge is not to find a flag but to translate the asm code you get with gdb to C code.
+* Aller dans le repo du workshop sur [GitHub] dans l'onglet "Issues"
+* Créer deux à trois issues (détaillez un minimum les issues, ne pas juste mettre le titre)
+* Aller dans l'onglet "Projects", créer un projet et assigner les issues au projet en cours
+* Créer un label "error handling", "bug" et "enhancement" et les assigner aux issues correspondantes
+* Ajouter une photo dans le commentaire de l'une des issues
+* Assigner une issue à au moins un membre de l'équipe
+* Close au moins une des issues et la déplacer dans la barre "Done"
+# 2 - Créer sa fork 
